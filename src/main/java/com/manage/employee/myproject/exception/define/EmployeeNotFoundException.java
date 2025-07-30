@@ -1,4 +1,4 @@
-package com.manage.employee.myproject.exception;
+package com.manage.employee.myproject.exception.define;
 
 public class EmployeeNotFoundException extends RuntimeException{
   public EmployeeNotFoundException(String message){

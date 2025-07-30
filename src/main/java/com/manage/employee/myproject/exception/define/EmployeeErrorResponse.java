@@ -1,4 +1,4 @@
-package com.manage.employee.myproject.exception;
+package com.manage.employee.myproject.exception.define;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
