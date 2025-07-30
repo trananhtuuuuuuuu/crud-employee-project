@@ -52,10 +52,21 @@ public class User {
 
   }
 
-  public User(String firstName, String lastName, String email, String password){
+  public User(String firstName, 
+  String lastName, 
+  String email, 
+  String password){
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
     this.password = password;
   }
+
+  // public User(String firstName, String lastName, String email, String password, Collection<Role> roles) {
+  //       this.firstName = firstName;
+  //       this.lastName = lastName;
+  //       this.email = email;
+  //       this.password = password;
+  //       this.roles = roles;
+  //   }
 }
