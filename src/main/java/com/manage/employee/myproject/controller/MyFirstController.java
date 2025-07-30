@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 
+
 @RestController
 public class MyFirstController {
 
@@ -13,5 +14,11 @@ public class MyFirstController {
   public String getMethod() {
       return "Hello";
   }
+
+  @GetMapping("/employees")
+  public String getEmployee() {
+      return new String();
+  }
+  
   
 }
