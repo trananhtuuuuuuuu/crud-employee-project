@@ -21,11 +21,20 @@ import lombok.ToString;
 public class Employee {
 
   @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   private long id;
   private String name;
   private String gender;
   private String email;
   private String date;
   private long age;
+
+  public Employee(String name, String gender,
+  String email, String date, long age){
+    this.name = name;
+    this.gender = gender;
+    this.email = email;
+    this.date = date;
+    this.age = age;
+  }
 }
