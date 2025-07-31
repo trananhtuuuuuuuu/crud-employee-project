@@ -48,6 +48,8 @@ public class UserServiceImpl  implements UserService{
       if (user == null) {
         throw new UsernameNotFoundException("Invalid username or password.");
       }
+      //System.out.println("✅ User found: " + user.getEmail());
+      //System.out.println("Stored hash: " + user.getPassword().substring(0, 20) + "...");
     return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), mapRolesToAuthorities(user.getRoles()));
   }
 
